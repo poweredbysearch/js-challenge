@@ -18,9 +18,21 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.(js|jsx)$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
-    }]
+    }, {
+      test: /\.css$/,
+      loader: 'style!css'
+    }, {
+      test: /\.json$/,
+      loader: 'json'
+    }],
+    noParse: /node_modules\/json-schema\/lib\/validate\.js/
+  },
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
   }
 };
