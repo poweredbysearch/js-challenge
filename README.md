@@ -3,8 +3,8 @@
 ## Installation
 
 ```bash
-git clone https://github.com/gaearon/react-transform-boilerplate.git
-cd react-transform-boilerplate
+git clone https://github.com/poweredbysearch/js-challenge.git
+cd js-challenge
 npm install
 npm start
 open http://localhost:3000
